@@ -1,0 +1,14 @@
+{
+  "name": "webrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webrtc.js",
+  "scripts": {
+    "start": "budpo index.js:bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "simple-peer": "^9.2.0"
+  }
+}
