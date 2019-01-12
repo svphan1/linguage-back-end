@@ -2,16 +2,19 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const sessionsRoute = require("./routes/sessions");
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
+app.use("/sessions", sessionsRoute);
 
 app.get("/", (req, res) =>
-  res.json(
-    "Welcome to Linguage"
-  )
+  res.json({
+    Home: "Welcome to Linguage",
+    Sessions: "http://localhost:3000/sessions"
+  })
 );
 
 function notFound(err, req, res, next) {

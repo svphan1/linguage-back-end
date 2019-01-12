@@ -9,3 +9,5 @@ router.get("/", (req, res) => {
       res.json({ sessions: sessions });
     });
 });
+
+module.exports = router;
