@@ -1,1 +1,1 @@
-# Database back-end for Linguage
+# Back-end and database for Linguage
